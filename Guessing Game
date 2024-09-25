@@ -1,0 +1,13 @@
+#Guessing Game
+import random
+playagain = "z"
+while playagain.upper() != "X":
+    guess = input("Enter a number 1-10: ")
+    num = random.randint(1,10)
+    if guess == num:
+        print("You guessed right!")
+    else:
+        print("Wrong! The number was",num)
+    playagain = input("Enter X to quit or any key to play again: ").strip()
+
+
