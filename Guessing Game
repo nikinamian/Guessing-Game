@@ -5,12 +5,16 @@ print()
 print ("Try and guess the right number!")
 playagain = "z"
 while playagain.upper() != "X":
-    guess = input("Guess a number 1-10: ")
+    guess = int(input("Guess a number 1-10: "))
     num = random.randint(1,10)
-    if guess == num:
+    if guess==num:
         print("You guessed right!")
-    else:
+    if guess!=num:
         print("Wrong! The number was",num)
-    playagain = input("Enter X to quit or any key to play again: ").strip()
+    playagain = input("Enter X to quit: ").strip()
+    print()
+
+
+
 
 
