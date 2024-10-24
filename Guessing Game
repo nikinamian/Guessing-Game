@@ -17,11 +17,10 @@ while playagain.upper() != "X":
     elif guess>num:
         print("Too high!")
         print("The number was",num)
-    playagain = input("Enter X to quit: ").strip()
+    playagain = input("Enter X to quit or any key to play a new game: ").strip()
     print()
     
     
-
 
 
 
