@@ -1,4 +1,5 @@
 #Guessing Game
+
 import random
 print ("Welcome to the guessing game!")
 print()
@@ -9,11 +10,17 @@ while playagain.upper() != "X":
     num = random.randint(1,10)
     if guess==num:
         print("You guessed right!")
-    if guess!=num:
-        print("Wrong! The number was",num)
+        break
+    elif guess<num:
+        print("Too low!")
+        print("The number was",num)
+    elif guess>num:
+        print("Too high!")
+        print("The number was",num)
     playagain = input("Enter X to quit: ").strip()
     print()
-
+    
+    
 
 
 
